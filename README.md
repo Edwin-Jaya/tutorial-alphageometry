@@ -19,8 +19,7 @@ Setelah proses instalasi WSL selesai, buka terminal WSL, lalu unduh dan install 
 
 ## 3. Membuat Environment Python pada WSL
 
-Setelah Miniconda terpasang, buat environment baru dengan Python versi 3.10.  
-Buka terminal (di dalam WSL) dan jalankan perintah berikut:
+Setelah Miniconda terpasang, buat environment baru dengan Python versi 3.10. Buka terminal (di dalam WSL) dan jalankan perintah berikut:
 
 ```bash
 conda create -n deepmind python=3.10
@@ -64,7 +63,7 @@ Download checkpoint, bobot, dan vocabulary dari link berikut :
 
 https://drive.google.com/drive/u/0/folders/1ZLaZ2ajtOcILDWa5ePPLX1bmaf_BNRZV
 
-Kemudian buat folder bernama ag_ckpt_vocab di dalam direktori utama proyek alphageometry dan pindahkan file yang telah didownload ke dalam folder ag_ckpt_vocab.
+Kemudian buat folder bernama <code>ag_ckpt_vocab</code> di dalam direktori utama proyek <code>alphageometry</code> dan pindahkan file yang telah didownload ke dalam folder <code>ag_ckpt_vocab</code>.
 
 Contoh struktur direktori:
 
@@ -80,4 +79,4 @@ alphageometry/
 
 ## 7. Menjalankan Notebook
 
-Buka file inference.ipynb (misalnya menggunakan Jupyter Notebook atau VS Code) dan jalankan perintah-perintah di dalamnya untuk melakukan inferensi menggunakan model.
+Buka file <code>inference.ipynb</code> (misalnya menggunakan Jupyter Notebook atau VS Code) dan jalankan perintah-perintah di dalamnya untuk melakukan inferensi menggunakan model.
