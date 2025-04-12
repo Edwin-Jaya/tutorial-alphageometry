@@ -1,6 +1,6 @@
 # Alphageometry
 
-Panduan berikut ini ditujukan untuk pengguna yang baru memulai. Ikuti langkah-langkah di bawah ini secara berurutan:
+Panduan berikut ini ditujukan untuk menggunakan Alphageometry. Ikuti langkah-langkah di bawah ini secara berurutan:
 
 ## 1. Install Windows Subsystem for Linux (WSL)
 
@@ -30,20 +30,9 @@ Setelah proses pembuatan environment selesai, aktifkan environment tersebut:
 conda activate deepmind
 ```
 
-## 4. Download dan Konfigurasi Meliad
+## 4. Unzip Meliad
 
-Untuk meng-clone repository meliad dari Google Research dan menambahkan lokasinya ke variabel lingkungan PYTHONPATH, ikuti langkah-langkah berikut:
-Jalankan perintah-perintah ini di terminal (dalam WSL) di folder alphageometry:
-```
-MELIAD_PATH=meliad_lib/meliad
-
-mkdir -p $MELIAD_PATH
-
-git clone https://github.com/google-research/meliad $MELIAD_PATH
-
-export PYTHONPATH=$PYTHONPATH:$MELIAD_PATH
-```
-Setelah menjalankan perintah-perintah di atas, struktur direktori akan terlihat seperti berikut:
+Silahkan unzip meliad sehingga struktur direktori akan terlihat seperti berikut:
 ```
 alphageometry/
 ├── ag_ckpt_vocab/
@@ -58,12 +47,11 @@ alphageometry/
 
 ## 5. Persiapan Berkas Model
 
-Download ketiga file berikut dari link :
+Download checkpoint, bobot, dan vocabulary dari link berikut :
 
 https://drive.google.com/drive/u/0/folders/1ZLaZ2ajtOcILDWa5ePPLX1bmaf_BNRZV
 
-Kemudian buat folder bernama ag_ckpt_vocab di dalam direktori utama proyek alphageometry.
-Pindahkan file yang telah didownload ke dalam folder ag_ckpt_vocab.
+Kemudian buat folder bernama ag_ckpt_vocab di dalam direktori utama proyek alphageometry dan pindahkan file yang telah didownload ke dalam folder ag_ckpt_vocab.
 
 Contoh struktur direktori:
 
