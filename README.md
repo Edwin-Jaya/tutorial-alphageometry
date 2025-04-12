@@ -81,3 +81,8 @@ alphageometry/
 ## 7. Menjalankan Notebook
 
 Buka file <code>inference.ipynb</code> (misalnya menggunakan Jupyter Notebook atau VS Code) dan jalankan perintah-perintah di dalamnya untuk melakukan inferensi menggunakan model.
+
+
+# Reference:
+- https://github.com/google-deepmind/alphageometry
+- https://medium.com/aiguys/alphageometry-an-olympiad-level-ai-system-for-geometry-285024495822
