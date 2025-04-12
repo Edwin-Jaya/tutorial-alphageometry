@@ -1,6 +1,7 @@
 # Alphageometry
 
 Panduan berikut ini ditujukan untuk menggunakan Alphageometry. Ikuti langkah-langkah di bawah ini secara berurutan:
+(Saat ini tutorial hanya masih pada windows, macos menyusul)
 
 ## 1. Install Windows Subsystem for Linux (WSL)
 
