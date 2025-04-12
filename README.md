@@ -8,10 +8,12 @@ Untuk menjalankan perintah dan skrip berbasis Linux pada Windows, Anda perlu men
 Ikuti panduan instalasi WSL yang tersedia di situs berikut:  
 [Install WSL di Windows 11](https://pureinfotech.com/install-wsl-windows-11/)
 
-## 2. Download dan Install Miniconda pada WSL
+AlphaGeometry membutuhkan lingkungan Linux karena alat ini dikembangkan untuk berjalan di atas sistem operasi Unix-like. Beberapa dependensi, skrip, dan toolchain yang digunakan dalam AlphaGeometry hanya tersedia atau lebih stabil di Linux. Dengan menggunakan WSL (Windows Subsystem for Linux), Anda dapat menjalankan AlphaGeometry secara langsung di dalam sistem Windows tanpa harus dual-boot atau menggunakan mesin virtual.
 
-Miniconda merupakan paket manajer yang ringan untuk mengelola environment Python.  
-Setelah menginstall, jalankan bash lalu unduh dan install Miniconda dengan mengikuti petunjuk pada tautan berikut:  
+## 2. Download dan Install Miniconda pada WSL
+ 
+Setelah proses instalasi WSL selesai, buka terminal WSL, lalu unduh dan install Miniconda dengan mengikuti langkah-langkah pada tautan berikut:
+
 [Install Miniconda di Ubuntu 22.04](https://www.rosehosting.com/blog/how-to-install-miniconda-on-ubuntu-22-04/)  
 > **Catatan:** Langkah update juga tersedia secara opsional pada halaman tersebut.
 
@@ -30,7 +32,18 @@ Setelah proses pembuatan environment selesai, aktifkan environment tersebut:
 conda activate deepmind
 ```
 
-## 4. Unzip Meliad
+## 4. Instalasi Dependensi
+
+Pastikan Anda berada di direktori utama proyek (tempat file requirements.txt berada), kemudian jalankan perintah berikut untuk menginstall semua paket yang diperlukan:
+
+```
+pip install -r requirements.txt
+```
+
+> **Catatan:** Jika file requirements.txt berada di direktori lain, ganti /path/to/requirements.txt dengan path yang sesuai.
+
+
+## 5. Unzip Meliad
 
 Silahkan unzip meliad sehingga struktur direktori akan terlihat seperti berikut:
 ```
@@ -45,7 +58,7 @@ alphageometry/
     └── meliad/
 ```
 
-## 5. Persiapan Berkas Model
+## 6. Persiapan Berkas Model
 
 Download checkpoint, bobot, dan vocabulary dari link berikut :
 
@@ -64,16 +77,6 @@ alphageometry/
 ├── inference.ipynb
 └── requirements.txt
 ```
-
-## 6. Instalasi Dependensi
-
-Pastikan Anda berada di direktori utama proyek (tempat file requirements.txt berada), kemudian jalankan perintah berikut untuk menginstall semua paket yang diperlukan:
-
-```
-pip install -r requirements.txt
-```
-
-> **Catatan:** Jika file requirements.txt berada di direktori lain, ganti /path/to/requirements.txt dengan path yang sesuai.
 
 ## 7. Menjalankan Notebook
 
